@@ -7,10 +7,10 @@ pip install decouple
 ```
 
 ## Register event handler
-![register event handler](docs/img/01_register.png)
+![register event handler](https://github.com/andrey-avdeev/decouple/blob/master/docs/img/01_register.png)
 
 ## Dispatch events
-![dispatch events](docs/img/02_handle.png)
+![dispatch events](https://github.com/andrey-avdeev/decouple/blob/master/docs/img/02_handle.png)
 
 ## Example
 ### Simple usage
