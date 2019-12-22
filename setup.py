@@ -15,7 +15,7 @@ setup(
     author="Andrey Avdeev",
     author_email="seorazer@gmail.com",
     license="Apache 2.0",
-    packages=find_packages(),
+    packages=["decouple"],
     zip_safe=False,
     python_requires=">=3.7",
     install_requires=[],
