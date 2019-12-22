@@ -11,11 +11,11 @@ class Module(Publisher):
         super().__init__(mediator)
         self._lazy_subscriptions = []
 
-    def sub(self, event: Union[type, str], handler: Callable[[Any], None]):
+    def sub(self, event: Union[type, str], handler: Callable[[Any], None], priority: Optional[int] = None):
         if self._mediator:
-            self._mediator.add(event, handler)
+            self._mediator.add(event, handler, priority)
         else:
-            self._lazy_subscriptions.append((event, handler))
+            self._lazy_subscriptions.append((event, handler, priority))
 
         return self
 
@@ -26,8 +26,8 @@ class Module(Publisher):
                 subscriptions = self._lazy_subscriptions
                 self._lazy_subscriptions = []
 
-                for event, handler in subscriptions:
-                    self.sub(event, handler)
+                for event, handler, priority in subscriptions:
+                    self.sub(event, handler, priority)
 
     def add(self, module: Module) -> Module:
         module.init(self._mediator)

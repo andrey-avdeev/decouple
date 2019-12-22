@@ -24,7 +24,7 @@ class Registry:
 
         self._priorities[event_name][priority].append(handler)
 
-        priorities = sorted(list(self._priorities[event_name].keys()))
+        priorities = sorted(list(self._priorities[event_name].keys()), reverse=True)
 
         self._handlers[event_name] = []
 
