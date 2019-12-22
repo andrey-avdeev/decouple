@@ -7,14 +7,14 @@ pip install decouple
 ```
 
 ## Register event handler
-![register event handler](https://github.com/andrey-avdeev/decouple/blob/master/docs/img/01_register.png)
+![register event handler](https://raw.githubusercontent.com/andrey-avdeev/decouple/master/docs/img/01_register.png)
 
 ## Dispatch events
-![dispatch events](https://github.com/andrey-avdeev/decouple/blob/master/docs/img/02_handle.png)
+![dispatch events](https://raw.githubusercontent.com/andrey-avdeev/decouple/master/docs/img/02_handle.png)
 
 ## Example
 ### Simple usage
-Code of example is [here](examples/simple)
+Code of example is [here](https://github.com/andrey-avdeev/decouple/tree/master/examples/simple)
 
 1. Write ModuleA - publisher
 ```python
