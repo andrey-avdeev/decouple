@@ -8,7 +8,7 @@ with io.open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="decouple",
-    version="0.0.3",
+    version="0.0.4",
     description="Decoupling logic",
     long_description=readme,
     long_description_content_type="text/markdown",
@@ -21,5 +21,5 @@ setup(
     install_requires=[],
     keywords="decouple mediator decoupling",
     url="https://github.com/andrey-avdeev/decouple",
-    download_url='https://github.com/andrey-avdeev/decouple/archive/v_0.0.3.tar.gz'
+    download_url='https://github.com/andrey-avdeev/decouple/archive/v_0.0.4.tar.gz'
 )
