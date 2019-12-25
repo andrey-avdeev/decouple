@@ -11,7 +11,7 @@ class Registry:
     def add(self, event_name: str, handler: Callable[[Event], None], priority: Optional[int] = None) -> None:
         if event_name not in self._handlers:
             self._handlers[event_name] = []
-            self._priorities[event_name] = []
+            self._priorities[event_name] = {}
 
         if not priority:
             if len(self._priorities[event_name]) > 0:
